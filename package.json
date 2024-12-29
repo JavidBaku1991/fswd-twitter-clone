@@ -1,0 +1,32 @@
+{
+  "name": "full-stack-twitter-clone",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=16.17.0"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@popperjs/core": "^2.11.8",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.4.3",
+    "axios": "^1.7.9",
+    "babel-loader": "^9.2.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "bootstrap": "^5.1.3",
+    "css-loader": "^7.1.2",
+    "jquery": "^3.7.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^3"
+  }
+}
