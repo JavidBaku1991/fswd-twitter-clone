@@ -9,7 +9,6 @@ import Footer from './Footer';
 
 const Feed = () => {
 
-  //    states
 
   const [tweets, setTweets] = useState([]);
   const [newTweet, setNewTweet] = useState("");

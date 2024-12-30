@@ -1,12 +1,17 @@
 const { environment } = require('@rails/webpacker');
 const { resolve } = require('path');
 
+// Add a rule for handling SVG files
+environment.loaders.append('svg', {
+  test: /\.svg$/,
+  use: ['file-loader']
+});
+
 environment.config.merge({
   resolve: {
     extensions: ['.js', '.jsx', '.scss', '.css']
   }
 });
-
 
 const customConfig = {
   resolve: {
@@ -22,18 +27,6 @@ const customConfig = {
     }
   }
 };
-
-// Add a rule for handling image files
-environment.loaders.append('images', {
-  test: /\.(png|jpe?g|gif|svg)$/i,
-  type: 'asset/resource',
-});
-
-environment.config.delete('node.dgram');
-environment.config.delete('node.fs');
-environment.config.delete('node.net');
-environment.config.delete('node.tls');
-environment.config.delete('node.child_process');
 
 environment.config.merge(customConfig);
 

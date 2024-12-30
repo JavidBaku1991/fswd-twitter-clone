@@ -7,12 +7,10 @@ import './stylesheets/styles.scss';
 
 const Home = () => {
 
-  //   states
 
   const [signUpMessage, setSignUpMessage] = useState("");
   const [logInMessage, setLogInMessage] = useState("");
   
-  //   handlers
 
   const handleSignUp = (event) => {
     event.preventDefault();
