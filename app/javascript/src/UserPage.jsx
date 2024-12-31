@@ -9,23 +9,18 @@ import Footer from './Footer';
 
 const UserPage = () => {
 
-  //    states
 
   const [usersTweets, setUsersTweets] = useState([]);
   const [currentUser, setCurrentUser] = useState("");
   const [tweetCount, setTweetCount] = useState(0);
 
-  //    the clicked user 
-
   const username = window.location.pathname.replace('/', '');
 
-  //    map users tweets to state
 
   const listUserTweets = function (response) {
     setUsersTweets(response.tweets.map(tweet => tweet));
   };
 
-  //    handlers 
 
   const deleteTweetHandler = function (event) {
     var id = event.target.dataset.id;
@@ -35,7 +30,6 @@ const UserPage = () => {
     });
   };
 
-  //    get user and users tweets on page load
 
   useEffect(() => {
     getCurrentUser(function (response) {

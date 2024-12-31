@@ -22,7 +22,7 @@ const Home = () => {
         setSignUpMessage(response.error);
       }
       else {
-        setSignUpMessage("Success! Please log in");
+        setSignUpMessage("Cool, you can log in now!");
         $('#newUsernameInput').val('');
         $('#newEmailInput').val('');
         $('#newPasswordInput').val('');

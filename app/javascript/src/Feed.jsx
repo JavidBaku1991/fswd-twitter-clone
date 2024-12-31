@@ -104,11 +104,11 @@ const Feed = () => {
               <ul className="ps-0 p-2 ps-md-2 py-xxl-3 m-0">
                 <li className="title fw-bold">#Explore</li>
                 <ul className="ps-0 ps-md-2 explore-tags">
-                  <li>#WorldHealthDay</li>
-                  <li>#Rails</li>
-                  <li>#MathsInFilmOrSong</li>
-                  <li>#ror</li>
-                  <li>#etc</li>
+                  <li>#music</li>
+                  <li>#guitar</li>
+                  <li>#politics</li>
+                  <li>#Trump</li>
+                  <li>#movie</li>
                 </ul>
               </ul>
             </div>
